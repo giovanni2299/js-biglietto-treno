@@ -17,19 +17,19 @@ let KM = parseFloat(prompt('write your distance')); //number
 console.log('distance to do in KM:',KM); //number
 
 //TIKET-PRICE
-let price = parseFloat(KM * 0.21).toFixed(2); //number
+let price = parseFloat(KM * 0.21); //number
 if(age >=18 || age <65){
-    console.log('full price:',price);
+    console.log('full price:',price).toFixed(2);
 }
 
 //discounnt 20%
-let priceOff20 = parseFloat(price * 0.2).toFixed(2); //number 
+let priceOff20 = parseFloat(price * 0.2); //number 
 if(age <18){
-    console.log('ticketoff20:' ,price - priceOff20);
+    console.log('ticketoff20:' ,price - priceOff20).toFixed(2);
 }
 
 //discount 40%
-let priceOff40 = parseFloat(price * 0.4).toFixed(2); //number
+let priceOff40 = parseFloat(price * 0.4); //number
 if(age >=65){
-    console.log('tiketoff40:' ,price - priceOff40);
+    console.log('tiketoff40:' ,price - priceOff40).toFixed(2);
 }
