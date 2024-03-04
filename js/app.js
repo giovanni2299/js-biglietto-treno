@@ -21,7 +21,8 @@ let price = parseFloat(KM * 0.21); //number
 if(age >=18 || age <65){
     console.log('full price:',price).toFixed(2);
 } else if(age <18){
-    console.log('ticketoff20:' ,price - priceOff20).toFixed(2);
+    let priceOff20 = parseFloat(price * 0.2).toFixed(2); //number
+    console.log('ticketoff20:' ,price - priceOff20);
 }
 
 //discounnt 20%
