@@ -20,13 +20,15 @@ console.log('distance to do in KM:',KM); //number
 let price = parseFloat(KM * 0.21); //number
 if(age >=18 || age <65){
     console.log('full price:',price).toFixed(2);
+} else if(age <18){
+    console.log('ticketoff20:' ,price - priceOff20).toFixed(2);
 }
 
 //discounnt 20%
-let priceOff20 = parseFloat(price * 0.2); //number 
-if(age <18){
-    console.log('ticketoff20:' ,price - priceOff20).toFixed(2);
-}
+// let priceOff20 = parseFloat(price * 0.2); //number 
+// if(age <18){
+//     console.log('ticketoff20:' ,price - priceOff20).toFixed(2);
+// }
 
 //discount 40%
 let priceOff40 = parseFloat(price * 0.4); //number
