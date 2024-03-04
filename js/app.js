@@ -9,32 +9,33 @@
 //calcolare il prezzo del biglietto in base ai km e al età del passeggero
 
 //AGE
-let age = parseFloat(prompt('write your age')); //number
+let age = parseInt(prompt('write your age')); //number
 console.log('your age:',age); //number
 
 //KM
-let KM = parseFloat(prompt('write your distance')); //number
+let KM = parseInt(prompt('write your distance')); //number
 console.log('distance to do in KM:',KM); //number
 
 //TIKET-PRICE
 let price = parseFloat(KM * 0.21); //number
 
 //discount 40%
-let priceOff40 = parseFloat(price * 0.4); //number
+let priceOff40 = parseInt(price * 0.4); //number
 let discountPrice40 = price - priceOff40
 
-
 //discount 20%
-let priceOff20 = parseFloat(price * 0.2); //number
+let priceOff20 = parseInt(price * 0.2); //number
 let discountPrice20 = price - priceOff20
 
-//operetion
+//SE over 65 applico uno sconto del 40%
 if(age >=65){
-    console.log('tiketoff40:' +discountPrice40.toFixed(2));
+    console.log('tiketoff40:' ,discountPrice40.toFixed(2)); //string
+    //Altrimenti se minorenne applico uno sconto del 20%
 }else if(age <18){
-    console.log('ticketoff20:' +discountPrice20.toFixed(2));
+    console.log('ticketoff20:' ,discountPrice20.toFixed(2)); //string
+    //Altrimenti niente sconto 
 }else{
-    console.log('full price:' +price.toFixed(2));
+    console.log('full price:' ,price.toFixed(2)); //string
 }
 
 
