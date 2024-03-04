@@ -10,22 +10,26 @@
 
 //AGE
 let age = parseFloat(prompt('write your age')); //number
-console.log('età:',age); //number
+console.log('your age:',age); //number
 
 //KM
 let KM = parseFloat(prompt('write your distance')); //number
-console.log('distance:',KM); //number
+console.log('distance to do in KM:',KM); //number
 
 //TIKET-PRICE
-let price = parseFloat(KM * 0,21); //number
-if(age >=18 || age >=65){
+let price = parseFloat(KM * 0.21).toFixed(2); //number
+if(age >=18 || age <65){
     console.log('full price:',price);
 }
 
 //discounnt 20%
-let price20 = parseFloat(price * 0.2); //number 
+let priceOff20 = parseFloat(price * 0.2).toFixed(2); //number 
 if(age <18){
-    console.log('ticket20:' ,price - price20);
+    console.log('ticketoff20:' ,price - priceOff20);
 }
 
 //discount 40%
+let priceOff40 = parseFloat(price * 0.4).toFixed(2); //number
+if(age >=65){
+    console.log('tiketoff40:' ,price - priceOff40);
+}
