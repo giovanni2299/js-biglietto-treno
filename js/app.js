@@ -35,14 +35,14 @@ let price = parseFloat(KM * 0.21); //number
 if(age >=65){
     //discount 40%
     let priceOff40 = parseInt(price * 0.4); //number
-    let discountPrice40 = price - priceOff40
+    let discountPrice40 = price - priceOff40;
     console.log('tiketoff40:' ,discountPrice40.toFixed(2)); //string
 
     //Altrimenti se minorenne applico uno sconto del 20%
 }else if(age <18){
     //discount 20%
     let priceOff20 = parseInt(price * 0.2); //number
-    let discountPrice20 = price - priceOff20
+    let discountPrice20 = price - priceOff20;
     console.log('ticketoff20:' ,discountPrice20.toFixed(2)); //string
 
     //Altrimenti niente sconto 
